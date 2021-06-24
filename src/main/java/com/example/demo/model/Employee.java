@@ -16,24 +16,26 @@ public class Employee {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@Column(name="first_Name")
-	private String firstName;
+	@Column(name="employee_Name")
+	private String employeeName;
 	
 	
-	@Column(name="telephone_Number")
-	private long telephoneNumber;
+	@Column(name="employee_Phone")
+	private long employeePhone;
 	
 	
 	public Employee() {
 		super();
 	}
 
+	
 
-	public Employee(String firstName, long telephoneNumber) {
+	public Employee(String employeeName, long employeePhone) {
 		super();
-		this.firstName = firstName;
-		this.telephoneNumber = telephoneNumber;
+		this.employeeName = employeeName;
+		this.employeePhone = employeePhone;
 	}
+
 
 
 	public long getId() {
@@ -46,24 +48,27 @@ public class Employee {
 	}
 
 
-	public String getFirstName() {
-		return firstName;
+	public String getEmployeeName() {
+		return employeeName;
 	}
 
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
 	}
 
 
-	public long getTelephoneNumber() {
-		return telephoneNumber;
+	public long getEmployeePhone() {
+		return employeePhone;
 	}
 
 
-	public void setTelephoneNumber(long telephoneNumber) {
-		this.telephoneNumber = telephoneNumber;
+	public void setEmployeePhone(long employeePhone) {
+		this.employeePhone = employeePhone;
 	}
+
+
+	
 
 
 
